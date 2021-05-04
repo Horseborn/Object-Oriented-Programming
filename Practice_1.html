@@ -31,9 +31,94 @@ of arguments. Instead of ha </p>
     <div>
         <p>Some benefits of OOP</p>
         <img id="benefitsOOP" src="img/BenefitsOfOOP.png" alt="">
-    </div>
-
-
    
+    
+    <div id="">
+        <p>Object-oriented programming</p>
+        <img id="oop_1" src="https://cdn.ttgtmedia.com/rms/onlineimages/whatis-object_oriented_programming.png" height="400px" width="400px">
+    </div>
+    
+    <div id="encap_1">
+        <fieldset id="field_1">
+            <legend>Encapsulation(Innkapsling)</legend>
+            <p>
+                <b>S</b>ay we have a program. It has a few logically different objects which communicate with each other — according to the rules defined in the program. <br>
+                <b>E</b>ncapsulation is achieved when each object keeps its state private, inside a class. Other objects don’t have direct access to this state. Instead, they can only call a list of public functions — called methods. <br>
+                <b>S</b>o, the object manages its own state via methods — and no other class can touch it unless explicitly allowed. If you want to communicate with the object, you should use the methods provided. But (by default), you can’t change the state. <br>
+                <b>L</b>et's say we’re building a tiny Sims game. There are people and there is a cat. They communicate with each other. We want to apply encapsulation, so we encapsulate all “cat” logic into a Cat class. It may look like this:
+                <br>
+                <b>H</b>ere the “state” of the cat is the private variables mood, hungry and energy. It also has a private method meow(). It can call it whenever it wants, the other classes can’t tell the cat when to meow.
+
+                <br> What they can do is defined in the public methods sleep(), play() and feed().  Each of them modifies the internal state somehow and may invoke meow().  Thus, the binding between the private state and public methods is made.
+                 
+                 This is encapsulation.</p>
+            </p>
+        </fieldset>
+        
+        <img id="cat_img"  src="https://cdn-media-1.freecodecamp.org/images/M4t8zW9U71xeKSlzT2o8WO47mdzrWkNa4rWv">
+    </div>
+    
+
+   <div id="abstr_1">
+       <fieldset id="field_2">
+           <legend>Abstraction(Abstraksjon)</legend>
+           <p>
+            <b>A</b>bstraction can be thought of as a natural extension of encapsulation.
+
+            In object-oriented design, programs are often extremely large. And separate objects communicate with each other a lot. So maintaining a large codebase like this for years — with changes along the way — is difficult. <br>
+            <b>A</b>bstraction is a concept aiming to ease this problem.
+
+            Applying abstraction means that each object should only expose a high-level mechanism for using it. <br>
+            <b>T</b>his mechanism should hide internal implementation details. It should only reveal operations relevant for the other objects.
+
+            Think — a coffee machine. It does a lot of stuff and makes quirky noises under the hood. But all you have to do is put in coffee and press a button. <br>
+            <b>P</b>referably, this mechanism should be easy to use and should rarely change over time. Think of it as a small set of public methods which any other class can call without “knowing” how they work. <br>
+
+            <b>A</b>nother real-life example of abstraction?
+            Think about how you use your phone:
+
+
+
+           </p>
+       </fieldset>
+       <img id="phone_pic" src="https://cdn-media-1.freecodecamp.org/images/hiX0NQOcZFShroq-a3FM5pFP2LV4UUI5mLle" alt="">
+       <fieldset id="field_3">
+           <legend>...</legend>
+         <p> <b>Y</b>ou interact with your phone by using only a few buttons. What’s going on under the hood? You don’t have to know — implementation details are hidden. <br> You only need to know a short set of actions.
+
+            Implementation changes — for example, a software update — rarely affect the abstraction you use.</p>
+       </fieldset>
+   </div>
+
+   <div>
+       <fieldset id="field_4">
+           <legend>Inheritance(Arv)</legend>
+           <p> <b>O</b>K, we saw how encapsulation and abstraction can help us develop and maintain a big codebase.
+
+            But do you know what is another common problem in OOP design?
+             <br>
+        <b>O</b>bjects are often very similar. They share common logic. But they’re not entirely the same. Ugh…
+
+        So how do we reuse the common logic and extract the unique logic into a separate class? One way to achieve this is inheritance. <br>
+
+      <b>I</b>t means that you create a (child) class by deriving from another (parent) class. This way, we form a hierarchy.
+
+The child class reuses all fields and methods of the parent class (common part) and can implement its own (unique part). <br> 
+<b>For example:</b>
+        </p>
+
+
+       </fieldset>
+       <img id="inherImg_1" src="https://cdn-media-1.freecodecamp.org/images/ZIm7lFjlrKeMWxcH8fqBapNkuSJIxW9-t9yf" alt="">
+
+       <fieldset id="field_5">
+           <legend>....</legend>
+           <p><b>I</b>f our program needs to manage public and private teachers, but also other types of people like students, we can implement this class hierarchy.
+
+            This way, each class adds only what is necessary for it while reusing common logic with the parent classes.</p>
+       </fieldset>
+   </div>
+
+   <a id="nxtPage_1" href="Practice_2.html">Neste side</a>
 </body>
 </html
